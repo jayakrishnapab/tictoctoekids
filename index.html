@@ -81,7 +81,7 @@
                 board[index] = currentPlayer;
                 cell.textContent = currentPlayer;
                 if (checkWin()) {
-                    alert(${currentPlayer} wins!);
+                    alert(`${currentPlayer} wins!`); // Fixed template literal
                     resetGame();
                 } else if (board.every(cell => cell !== '')) {
                     alert('Draw!');
@@ -110,5 +110,5 @@
             currentPlayer = 'X';
         }
     </script>
-    </body>
-    </html>
+</body>
+</html>
